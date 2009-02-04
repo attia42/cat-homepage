@@ -1,2 +1,4 @@
 # Fix the IE Problem - Designing
-# Contact us Page - Des/Dev
+	>>became better but not totally fixed :(
+	
+# Contact us Page - Dev/Des
