@@ -1,0 +1,300 @@
+﻿/*
+Site Name: CAT Homepage
+Site URL: http://www.catreloaded.net/
+Version: 1.0
+Author: Osama Gamal M. Attia
+Author Website: http://osama-gma.totalh.com
+Author e-mail: osama.gma@gmail.com
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, Calibri, "Times New Roman", Times, serif;
+	color: #666666;
+	font-size: 13px;
+}
+
+/*-------Header Styles-------*/
+
+.header {
+	width: 100%;
+	height: 368px;
+	background-image: url('../images/header.gif');
+	background-repeat: repeat-x;
+}
+
+.head {
+	/* I used the same class in the footer*/
+	width: 960px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.l_head {
+	width: 20px;
+	height: 100%;
+	background-image: url('../images/l_head.gif');
+	background-repeat: no-repeat;
+}
+
+.c_head {
+	height: 100%;
+	background-image: url('../images/c_head.gif');
+	background-repeat: repeat-x;
+	vertical-align: top;
+}
+
+.r_head {
+	height: 100%;
+	width: 20px;
+	background-image: url('../images/r_head.gif');
+	background-repeat: no-repeat;
+}
+
+img.logo {
+	border: none;
+}
+
+div.logo {
+	width: 231px;
+	height: 107px;
+	margin-top: 54px;
+}
+
+/*-------Login Styles-------*/
+/*-------Check the Form Styles Below-------*/
+
+.login {
+	margin-top: 8px;
+}
+
+.highlightText {
+	font-size: 16px;
+	color: #7d552a;
+}
+
+.highlightText:hover {
+	color: white;
+}
+
+/*-------Navigation Bar Styles-------*/
+
+.navBar {
+	height: 31px;
+	width: auto;
+	float: right;
+	background-image: url('../images/nav.gif');	/*url('../images/sidebar_title.gif')*/
+	background-repeat: repeat-x;
+	margin-top: 105px;
+}
+
+.navBarItem {
+	width: 95px;
+	height: 100%;
+	text-align: center;
+	border-right: 1px #cdd7dd solid;
+}
+
+.navBarLink {
+	/* I used the same class in the links in the copyRights*/
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.navBarLink:hover {
+	color: #669900;		/*#7d552a*/
+	font-weight: bold;
+}
+
+/*-------Body Styles-------*/
+
+.body {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*-------Sidebar Styles-------*/
+
+.sidebarLayout {
+	width: 255px;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.sidebarHeader {
+	width: 100%;
+	height: 20px;
+	background-image: url('../images/sidebar_top.gif');
+	background-repeat: no-repeat;
+}
+
+.sidebarBody {
+	width: 100%;
+	background-image: url('../images/sidebar_body.gif');
+	background-repeat: repeat-y;
+}
+
+.sidebarTitleContainer {
+	width: 245px;
+	height: 29px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url('../images/sidebar_title.gif');
+	border-top: 1px #DCE1E4 solid;	/*1px #adb9c2 solid*/
+	border-bottom: 1px #DCE1E4 solid;	/*1px #adb9c2 solid*/
+	background-repeat: repeat-x;
+	text-align: center;
+}
+
+.sidebarTitle {
+	padding: 3px;
+	font-size: 18px;
+}
+
+.sidebarTitle:hover {
+	color: #7d552a;
+	font-weight: 500;
+}
+
+.sidebarItem {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2px 12px 5px 12px;
+	line-height: 22px;
+}
+
+.sidebarFooter {
+	width: 100%;
+	height: 20px;
+	background-image: url('../images/sidebar_bottom.gif');
+	background-repeat: no-repeat;
+}
+
+/*-------Content Styles--------*/
+
+.content_container {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: top;
+}
+
+.content_top {
+	top: 0px;
+	height: 22px;
+	width: 700px;
+	background-image: url('../images/content-top.gif');
+	background-repeat: no-repeat;
+}
+
+.content_mid {
+	min-height: 500px;
+	width: 700px;
+	background-image: url('../images/content-mid.gif');
+	background-repeat: repeat-y;
+}
+
+.content_bottom {
+	bottom: 0px;
+	height: 22px;
+	width: 700px;
+	background-image: url('../images/content-bottom.gif');
+	background-repeat: no-repeat;
+}
+
+.cont_title {
+	font-size: 18px;
+	font-weight: 500;
+	width: 686px;
+	height: 29px;
+	margin-left: 7px;
+	background-image: url('../images/sidebar_title.gif');
+	border-top: 1px #DCE1E4 solid;	/*1px #adb9c2 solid*/
+	border-bottom: 1px #DCE1E4 solid;	/*1px #adb9c2 solid*/
+	background-repeat: repeat-x;
+	text-align: center;
+	line-height: 22px;
+}
+
+.cont_title:hover {
+	color: #7d552a;
+	font-weight: 500;
+}
+
+/*-------Footer Styles-------*/
+
+.footer {
+	background-image: url('../images/footer.gif');
+	background-repeat: repeat-x;
+	height: 86px;
+}
+
+.l_footer {
+	width: 20px;
+	height: 100%;
+	background-image: url('../images/l_footer.gif');
+	background-repeat: no-repeat;
+}
+
+.c_footer {
+	height: 100%;
+	background-image: url('../images/c_footer.gif');
+	background-repeat: repeat-x;
+	vertical-align: top;
+}
+
+.r_footer {
+	height: 100%;
+	width: 20px;
+	background-image: url('../images/r_footer.gif');
+	background-repeat: no-repeat;
+}
+
+.copyRights {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 43px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*-------HTML Elements' Styles-------*/
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #669900;
+	font-weight: bolder;
+}
+
+/*-------Form Styles-------*/
+/*-------You must use the class to style the type of input you are using-------*/
+
+select,
+input.text {
+	border: 1px white solid;
+	color: #7d552a;
+}
+
+select:hover,
+input.text:hover {
+	border: 1px #7d552a solid;
+	color: gray;
+}
+
+input.submit {
+	border: 1px #7d552a solid;
+	color: gray;
+}
+
+input.submit:hover {
+	border: 1px white solid;
+	color: #7d552a;
+}
