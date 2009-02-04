@@ -61,18 +61,17 @@
 					<!-- End Navigation Bar -->
 					
 				</div>
-				<div style="margin-top: 165px; width: 100%;">
-					<table cellpadding="0" cellspacing="0" style="width: 100%">
-						<tr>
-							<td style="width: 755px; background-image: url('images/brush.gif'); background-repeat: no-repeat; height: 205px;">&nbsp;</td>
-							<td>
-								<a href="feed.php">
-									<img style="border: none;" src="images/rss.png" alt="CATreloaded RSS Feeds" />
-								</a>
-							</td>
-						</tr>
-					</table>
-				</div>
+			
+				<table cellpadding="0" cellspacing="0" style="top: 0px; width: 100%">
+					<tr>
+						<td style="top: 0px;width: 755px; background-image: url('images/brush.gif'); background-repeat: no-repeat; height: 205px;">&nbsp;</td>
+						<td>
+							<a href="feed.php">
+								<img style="border: none;" src="images/rss.png" alt="CATreloaded RSS Feeds" />
+							</a>
+						</td>
+					</tr>
+				</table>
 			</td>
 			<td class="r_head">&nbsp;</td>
 		</tr>
