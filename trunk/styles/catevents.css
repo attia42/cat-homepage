@@ -1,0 +1,24 @@
+﻿/*
+Site Name: CAT Homepage
+Site URL: http://www.catreloaded.net/
+Version: 1.0
+Author: Osama Gamal M. Attia
+Author Website: http://osama-gma.totalh.com
+Author e-mail: osama.gma@gmail.com
+*/
+
+/*-------Search From Styles -------*/
+.searchContainer {
+	float: right;
+	margin-right: 20px;
+	margin-top: 0px;
+	height: 30px;
+	width: 450px;
+	border: 1px gray dashed;
+	border-top: none;
+}
+
+.searchForm {
+	height: 100%;
+	width: 410px;
+}
