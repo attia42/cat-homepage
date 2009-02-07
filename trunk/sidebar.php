@@ -16,12 +16,12 @@
 	
 	<!-- Start Sidebar Item -->
 	<div class="sidebarTitleContainer">
-		<div class="sidebarTitle">Useful Text</div>
+		<div class="sidebarTitle">About CATazine</div>
 	</div>
 
 	<div class="sidebarItem">
-		That is my Sidebar Item. I may put here anything I want. It may be random thing. I'm Just writing anything to fill this area. Bla bla bla :D<br />
-		bardo mesh 3aref akteb 7aga temla el Area de ;)
+		CATazine is a periodic magazine released by CAT for Mansoura University's students managed and organized by CSED foundation. CATazine contains topics in various fields.
+		<a href="catazine">Visit CATazine's Site!</a>
 	</div>
 	<!-- End Sidebar Item -->
 	

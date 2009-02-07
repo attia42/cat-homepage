@@ -105,7 +105,7 @@ div.logo {
 }
 
 .navBarLink:hover {
-	color: #669900;		/*#7d552a*/
+	color: #7d552a;		/*#669900*/
 	font-weight: bold;
 }
 
@@ -265,13 +265,14 @@ div.logo {
 /*-------HTML Elements' Styles-------*/
 
 a {
+	color: #669900;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #669900;
-	font-weight: bolder;
+	color: #7d552a;
+	/* font-weight: bolder; */
 }
 
 /*-------Form Styles-------*/

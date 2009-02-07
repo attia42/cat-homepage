@@ -36,7 +36,7 @@
 								</td>
 								
 								<td class="navBarItem">
-									<a href="index.php?page=services" class="navBarLink">Services</a>
+									<a href="catazine" class="navBarLink">CATazine</a>
 								</td>
 								
 								<td class="navBarItem">
