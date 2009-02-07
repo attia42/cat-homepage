@@ -8,11 +8,7 @@ Note: You must require/Include this Page in the top of the index.php page
 
 //This function will control the content according to the variable $_REQUEST['page']
 function ContentController() {
-	if ($_REQUEST['page'] == "services") {
-		echo "<h2 class='cont_title'>Services Page!</h3>";
-		//require_once("services.php");
-	}
-	else if ($_REQUEST['page'] == "catevents") {
+	if ($_REQUEST['page'] == "catevents") {
 		echo "<h2 class='cont_title'>CAT Events Page!</h3>";
 		// require_once("catevents/templates/index.php");
 	}
