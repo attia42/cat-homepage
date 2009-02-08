@@ -28,16 +28,19 @@ function ContentController() {
 		//	require_once("about.php");
 	}
 	else if ($_REQUEST['page'] == "mail_sent") {
-		echo "<span class='cont_title' style='text-decoration: blink;'>Thanks you for conatacting us. Your mail have been sent!</span>";
+		echo "<span class='cont_title'>Thanks you for conatacting us. Your mail have been sent!</span>";
+	}
+	else if ($_REQUEST['page'] == "mail_fail") {
+		echo "<span class='cont_title' style='color: red;'>Seems that there is a problem with the mail server! You may contact us at <a href='mailto:catazine@catreloaded.net'>catazine@catreloaded.net</a>. Thanks for contacting us.</span>";
 	}
 	else if ($_REQUEST['page'] == "feedback_error"){
 		// Error in Feedback Page
-		echo "<span class='cont_title' style='text-decoration: blink;'>Check your inputs please!</span>";
+		echo "<span class='cont_title' style='color: red;'>Check your inputs please!</span>";
 		require("feedback_form.html");
 	}
 	else if ($_REQUEST['page'] == "feedback_success"){
 		// Error in Feedback Page
-		echo "<span class='cont_title' style=''>Thank you for sharing your opinion, hope you like the next CataZine issues more (isA)!</span>";
+		echo "<span class='cont_title'>Thank you for sharing your opinion, hope you like the next CataZine issues more (isA)!</span>";
 		
 	}	
 	else {
