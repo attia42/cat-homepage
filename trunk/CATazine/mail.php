@@ -3,7 +3,7 @@
 $_REQUEST['page'] == "contact";
 include "index.php";
 
-$to      = 'orang_61@hotmail.com';
+$to      = 'catazine@catreloaded.net';
 $subject = $_POST['subject'];
 $message = wordwrap($_POST['msg'], 70);
 $headers = 'From: ' . $_POST['email'] . "\r\n" . 'Reply-To: ' . $_POST['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
