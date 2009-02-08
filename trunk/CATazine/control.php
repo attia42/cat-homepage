@@ -35,6 +35,11 @@ function ContentController() {
 		echo "<span class='cont_title' style='text-decoration: blink;'>Check your inputs please!</span>";
 		require("feedback_form.html");
 	}
+	else if ($_REQUEST['page'] == "feedback_success"){
+		// Error in Feedback Page
+		echo "<span class='cont_title' style=''>Thank you for sharing your opinion, hope you like the next CataZine issues more (isA)!</span>";
+		
+	}	
 	else {
 		// Default Page
 		require_once("feedback.php");
