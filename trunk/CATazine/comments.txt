@@ -6,7 +6,7 @@ Participate --> Osama
 Archive --> UNDER CONSTRUCTION IMAGE
 Team --> Atia
 About --> Emam 'All About CATazine Topic'
-Contact us --> Osama
+Contact us --> Osama - done
 
 
 ====================================================
