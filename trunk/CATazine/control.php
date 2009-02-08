@@ -12,8 +12,8 @@ function ContentController() {
 		// require_once("participate.php");
 	}
 	else if ($_REQUEST['page'] == "contact") {
-		echo "<h2 class='cont_title'>Contact Us Page!</h3>";
-		//	require_once("contact.php");
+		//echo "<h2 class='cont_title'>Contact Us Page!</h3>";
+		require_once("contact.php");
 	}
 	else if ($_REQUEST['page'] == "archive") {
 		echo "<h2 class='cont_title'>Archive Page!</h3>";
