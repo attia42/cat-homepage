@@ -30,7 +30,7 @@ function ContentController() {
 	else {
 		// Default Page
 		echo "<h2 class='cont_title'>Feedback Page!</h3>";
-		//	require_once("feedback.php");
+		require_once("feedback.php");
 	}
 }
 ?>
