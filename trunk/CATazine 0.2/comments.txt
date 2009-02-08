@@ -1,0 +1,19 @@
+Pages:
+======
+
+Feedback --> Atia
+Participate --> Osama
+Contact us --> Osama
+Archive --> UNDER CONSTRUCTION IMAGE
+Team --> Atia
+About --> Emam 'All About CATazine Topic'
+
+
+====================================================
+Notes:
+======
+- We just need the System to work from the user's point of view.
+- Feedback page will be the homepage.
+- Navbar must be awesome and eye-catching .. I Dunno how. :D
+- The Left half will be static .. however the right part is dynamic using PHP.
+- Someone must check the secuirty risks for the 'contact us' page.
