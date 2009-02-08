@@ -37,8 +37,8 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && i
     else
   	{
   		
-  		echo "Thank you for sharing your opinion, hope you like the next CataZine issues more (isA)";
-  		
+  		$_REQUEST['page'] = "feedback_success";
+  		include("index.php");
   	}
 	}
 }
