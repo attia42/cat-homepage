@@ -1,5 +1,5 @@
 <?php 
-include('includes\\validation.php');
+require_once('includes\\validation.php');
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && isset($_POST['help']))
 {
 	if( !SanityCheck($_POST['name'], "string", 50) || !CheckEmail($_POST['email']) || !SanityCheck($_POST['feed'], 'string', 5000))
