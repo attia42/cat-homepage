@@ -28,11 +28,17 @@ function ContentController() {
 		//	require_once("about.php");
 	}
 	else if ($_REQUEST['page'] == "mailed") {
-		echo "<h6 class='cont_title' style='text-decoration: blink;'>Thanks you for conatacting us. Your mail have been sent!</h6>";
+		echo "<span class='cont_title' style='text-decoration: blink;'>Thanks you for conatacting us. Your mail have been sent!</span>";
+	}
+	else if ($_REQUEST['page'] == "feedback_error"){
+		// Error in Feedback Page
+		echo "<span class='cont_title' style='text-decoration: blink;'>Check your inputs please!</span>";
+		require("feedback_form.html");
 	}
 	else {
 		// Default Page
 		require_once("feedback.php");
+		$fromIndex = "fromIndex";
 	}
 }
 ?>
