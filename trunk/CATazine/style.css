@@ -29,3 +29,21 @@ a:hover {
 .footer {
 	font-size: 11px;
 }
+
+input {
+	border: 1px solid gray;
+	margin: 5px;
+}
+
+input:hover {
+	border: 1px solid #FF9933;
+}
+
+textarea {
+	border: 1px solid gray;
+	margin: 5px;
+}
+
+textarea:hover {
+	border: 1px solid #FF9933;
+}

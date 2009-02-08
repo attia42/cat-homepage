@@ -27,9 +27,11 @@ function ContentController() {
 		echo "<h2 class='cont_title'>About CATazine Page!</h3>";
 		//	require_once("about.php");
 	}
+	else if ($_REQUEST['page'] == "mailed") {
+		echo "<h6 class='cont_title' style='text-decoration: blink;'>Thanks you for conatacting us. Your mail have been sent!</h6>";
+	}
 	else {
 		// Default Page
-		echo "<h2 class='cont_title'>Feedback Page!</h3>";
 		require_once("feedback.php");
 	}
 }

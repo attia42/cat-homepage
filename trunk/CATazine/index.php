@@ -39,7 +39,7 @@
 						<td>
 							<div style="width: 100%; height: 15px; background-image: url('images/CATazine-Site_06.gif'); background-repeat: repeat-x;">&nbsp;</div>
 							<div style="width: 100%; height: 104px; background-color: #d4d4d4;">
-								<a href="http://catazine.catreloaded.net"><img src="images/CATazine-Site_11.gif" alt="CATazine Logo" style="border: none;" /></a>
+								<a href="index.php"><img src="images/CATazine-Site_11.gif" alt="CATazine Logo" style="border: none;" /></a>
 							</div>
 						</td>
 						<td style="width: 118px; height: 119px; background-image: url('images/CATazine-Site_08.gif'); background-repeat: no-repeat;">&nbsp;</td>
@@ -55,8 +55,8 @@
 				<table cellpadding="0" cellspacing="0" style="height: 100%; width: 100%;">
 					<tr>
 						<!-- Start form -->
-						<td style="vertical-align: top; padding-top: 10px;">
-							Content Goes Here
+						<td style="vertical-align: top; padding-top: 10px; font-size: 12px; line-height: 20px;">
+							<!-- Content Goes Here -->
 							<?php ContentController(); ?>
 						</td>
 						<!-- End form -->
