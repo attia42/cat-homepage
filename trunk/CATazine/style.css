@@ -30,6 +30,22 @@ a:hover {
 	font-size: 11px;
 }
 
+/*-------HTML Elements' Styles-------*/
+
+a {
+	color: #669900;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #7d552a;
+	/* font-weight: bolder; */
+}
+
+/*-------Form Styles-------*/
+/*-------You must use the class to style the type of input you are using-------*/
+
 input {
 	border: 1px solid gray;
 	margin: 5px;
