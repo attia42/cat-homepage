@@ -5,9 +5,9 @@
 			<td class="c_footer">
 				<!-- Start Copyrights -->
 				<div class="copyRights">
-					Designed by <a href="http://osama-gma.totalh.com" class="navBarLink" style="font-size: 11px;">Osama Gamal</a> and developed by <a href="http://http://www.mohamed-atia.com" class="navBarLink" style="font-size: 11px;">Mohamed Atia</a>
+					Designed by <a href="http://osama-gma.totalh.com" style="font-size: 11px;">Osama Gamal</a> and developed by <a href="http://http://www.mohamed-atia.com" style="font-size: 11px;">Mohamed Atia</a>
 					<br />
-					All rights reserved to <a href="http://www.catreloaded.net" class="navBarLink" style="font-size: 11px;">CATReloaded.net</a>
+					All rights reserved to <a href="http://www.catreloaded.net" style="font-size: 11px;">CATReloaded.net</a>
 				</div>
 				<!-- End Copyrights -->
 			</td>
