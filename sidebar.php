@@ -7,10 +7,10 @@
 	</div>
 	
 	<div class="sidebarItem">
-		<a href="http://www.csed-online.com">&#9679; CSED - Apply Your Study</a><br />
-		<a href="http://depiak.catreloaded.net">&#9679; Depiak - We Design, we Code</a><br />
-		<a href="http://www.cat-hackers.com">&#9679; Hackers - Linux Gurus</a><br />
-		<a href="http://pixicat.catreloaded.net">&#9679; PixiCAT - Make your mov</a><br />
+		&#9679; <a href="http://www.csed-online.com">CSED - Apply Your Study</a><br />
+		&#9679; <a href="http://depiak.catreloaded.net">Depiak - We Design, we Code</a><br />
+		&#9679; <a href="http://www.cat-hackers.com">Hackers - Linux Gurus</a><br />
+		&#9679; <a href="http://pixicat.catreloaded.net">PixiCAT - Make your mov</a><br />
 	</div>
 	<!-- End Sidebar Item -->
 	
