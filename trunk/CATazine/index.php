@@ -19,7 +19,12 @@
 		<td style="width: 50%; background-color: #353435; text-align: center; vertical-align: top;">
 			<img alt="CATazine Icon" src="images/CATazine-Site_20.gif" style="margin-top: 60px;" />
 			<div style="color: white;">
-				<a>feedback</a> | <a>participate</a> | <a>archive</a> | <a>team</a> | <a>about us</a> | <a>contact us</a>
+				<a href="index.php?page=feedback">feedback</a> | 
+				<a href="index.php?page=participate">participate</a> | 
+				<a href="index.php?page=archive">archive</a> | 
+				<a href="index.php?page=team">team</a> | 
+				<a href="index.php?page=about">about us</a> | 
+				<a href="index.php?page=contact">contact us</a>
 			</div>
 		</td>
 		<td style="width: 50%; background-color: #ffffff;">
