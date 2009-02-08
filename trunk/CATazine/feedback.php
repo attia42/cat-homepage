@@ -4,8 +4,9 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && i
 {
 	if( !SanityCheck($_POST['name'], "string", 50) || !CheckEmail($_POST['email']) || !SanityCheck($_POST['feed'], 'string', 5000))
 	{
-		echo "Check your inputs please";
-		include("feedback_form.html");
+		// echo "Check your inputs please";
+		$_REQUEST['page'] = "feedback_error";
+		include("index.php");
 	}
 	else
 	{
