@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -9,10 +9,16 @@
 
 <body>
 
+<?php
+	// You may not remove this require .. cauz I'm using the functions in it.
+	require_once("control.php");
+?>
+
 <table cellpadding="0" cellspacing="0" class="body">
 	<tr style="width: 100%; height: 100%;">
-		<td style="width: 50%; background-color: #353435; text-align: right;">
-		<img alt="CATazine Icon" src="images/CATazine-Site_20.gif" style="margin-right: 20px;" />
+		<td style="width: 50%; background-color: #353435; text-align: center; vertical-align: top;">
+			<img alt="CATazine Icon" src="images/CATazine-Site_20.gif" style="margin-top: 60px;" />
+			<div style="color: white;">Navigation bar here!</div>
 		</td>
 		<td style="width: 50%; background-color: #ffffff;">
 		<table cellpadding="0" cellspacing="0" style="width: 486px; height: 100%;">
@@ -49,7 +55,10 @@
 				<table cellpadding="0" cellspacing="0" style="height: 100%; width: 100%;">
 					<tr>
 						<!-- Start form -->
-						<td>Content Goes Here</td>
+						<td style="vertical-align: top; padding-top: 10px;">
+							Content Goes Here
+							<?php ContentController(); ?>
+						</td>
 						<!-- End form -->
 						<td style="width: 16px; height: 100%; background-image: url('images/CATazine-Site_17.gif'); background-repeat: repeat-y;">&nbsp;</td>
 					</tr>
