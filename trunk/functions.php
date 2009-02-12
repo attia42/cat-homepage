@@ -22,7 +22,7 @@ function ContentController() {
 	}
 	else {
 		echo "<h2 class='cont_title'>HomePage!</h3>";
-		//require_once("home.php");
+		require_once("home.php");
 	}
 }
 
