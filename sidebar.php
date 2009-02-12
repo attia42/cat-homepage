@@ -1,6 +1,6 @@
-<div class="sidebarHeader">&nbsp;</div>
+<div id="sidebarHeader">&nbsp;</div>
 
-<div class="sidebarBody">
+<div id="sidebarBody">
 	<!-- Start Sidebar Item -->
 	<div class="sidebarTitleContainer">
 		<div class="sidebarTitle">CAT Foundations</div>

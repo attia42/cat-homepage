@@ -73,6 +73,7 @@ div.logo {
 .highlightText {
 	font-size: 16px;
 	color: #7d552a;
+	font-size: 13px;
 }
 
 .highlightText:hover {
@@ -119,21 +120,21 @@ div.logo {
 
 /*-------Sidebar Styles-------*/
 
-.sidebarLayout {
+#sidebarLayout {
 	width: 255px;
 	vertical-align: top;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-.sidebarHeader {
+#sidebarHeader {
 	width: 100%;
 	height: 20px;
 	background-image: url('../images/sidebar_top.gif');
 	background-repeat: no-repeat;
 }
 
-.sidebarBody {
+#sidebarBody {
 	width: 100%;
 	background-image: url('../images/sidebar_body.gif');
 	background-repeat: repeat-y;
@@ -177,13 +178,13 @@ div.logo {
 
 /*-------Content Styles--------*/
 
-.content_container {
+#content_container {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	vertical-align: top;
 }
 
-.content_top {
+#content_top {
 	top: 0px;
 	height: 22px;
 	width: 700px;
@@ -191,14 +192,14 @@ div.logo {
 	background-repeat: no-repeat;
 }
 
-.content_mid {
+#content_mid {
 	min-height: 500px;
 	width: 700px;
 	background-image: url('../images/content-mid.gif');
 	background-repeat: repeat-y;
 }
 
-.content_bottom {
+#content_bottom {
 	bottom: 0px;
 	height: 22px;
 	width: 700px;
@@ -279,23 +280,13 @@ a:hover {
 /*-------You must use the class to style the type of input you are using-------*/
 
 select,
-input.text {
-	border: 1px white solid;
+input {
+	border: 1px #7d552a solid;
 	color: #7d552a;
 }
 
 select:hover,
-input.text:hover {
-	border: 1px #7d552a solid;
+input:hover {
+	border: 1px #669900 solid;
 	color: gray;
-}
-
-input.submit {
-	border: 1px #7d552a solid;
-	color: gray;
-}
-
-input.submit:hover {
-	border: 1px white solid;
-	color: #7d552a;
 }
