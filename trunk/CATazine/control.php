@@ -27,6 +27,15 @@ function ContentController() {
 		echo "<h2 class='cont_title'>About CATazine Page!</h3>";
 		//	require_once("about.php");
 	}
+	else if ($_REQUEST['page'] == "newmember") {
+		echo "<h2 class='cont_title'>Add new member</h3>";
+		require_once("newmember_form.html");
+	}
+	else if ($_REQUEST['page'] == "newmember_error") {
+		echo "<h2 class='cont_title'>Add new member</h3>";
+		echo "<br /><span class='cont_title' style='color: red;'>Check your inputs please!</span>";
+		require_once("newmember_form.html");
+	}
 	else if ($_REQUEST['page'] == "mail_sent") {
 		echo "<span class='cont_title'>Thanks you for conatacting us. Your mail have been sent!</span>";
 	}

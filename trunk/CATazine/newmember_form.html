@@ -1,4 +1,4 @@
-<form dir='rtl' name='add' action ='feedback.php' method='post' enctype='multipart/form-data' style='margin: 10px; margin-right: 2px; text-align: right;'>
+﻿<form dir='rtl' name='add' action ='newmember.php' method='post' enctype='multipart/form-data' style='margin: 10px; margin-right: 2px; text-align: right;'>
 	<span lang="ar-eg" dir="rtl">
 		&#1575;&#1604;&#1575;&#1587;&#1605;:&nbsp;&nbsp;
 		<input type='text' name='name' value="<?php echo $_POST['name']; ?>" />
@@ -11,23 +11,22 @@
 	<input type='text' name='email' value="<?php $_POST['email']; ?>" />
 	<br />
 	
-	&#1575;&#1604;&#1576;&#1585;&#1610;&#1583; &#1575;&#1604;&#1573;&#1604;&#1603;&#1578;&#1585;&#1608;&#1606;&#1610;: 
+	&#1575;&#1604;&#1576;&#1585;&#1610;&#1583; &#1575;&#1604;&#1573;&#1604;&#1603;&#1578;&#1585;&#1608;&#1606;&#1610; 
+    اخر : 
 	<input type='text' name='email2' value="<?php $_POST['email2']; ?>" />
 	<br />
 	
-	&#1575;&#1604;&#1576;&#1585;&#1610;&#1583; &#1575;&#1604;&#1573;&#1604;&#1603;&#1578;&#1585;&#1608;&#1606;&#1610;: 
+	االعنوان : 
 	<input type='text' name='address' value="<?php $_POST['address']; ?>" />
 	<br />
     
     
    
-	&#1607;&#1604; &#1604;&#1583;&#1610;&#1603; &#1578;&#1593;&#1604;&#1610;&#1602; &#1593;&#1604;&#1609; &#1575;&#1604;&#1605;&#1580;&#1604;&#1607; &#1567; &#1571;&#1608; &#1605;&#1602;&#1578;&#1585;&#1581; &#1567;
-	<br /> 
+	التعليم (الكلية / مجال التخصص) :<br /> 
 	<textarea id='feed'  name='education' style="width: 400px; height: 150px;"><?php echo $_POST['education']; ?></textarea>
 	<br />
 	
-	&#1607;&#1604; &#1578;&#1585;&#1610;&#1583; &#1575;&#1604;&#1605;&#1587;&#1575;&#1593;&#1583;&#1577; &#1601;&#1610; &#1575;&#1604;&#1573;&#1589;&#1583;&#1575;&#1585; &#1575;&#1604;&#1602;&#1575;&#1583;&#1605; &#1567;
-	<br /> 
+	معلومات عن العضو :<br /> 
 	<textarea id='help'  name='information' style="width: 400px; height: 150px;"><?php $_POST['information']; ?></textarea>
 	<br />
 	
