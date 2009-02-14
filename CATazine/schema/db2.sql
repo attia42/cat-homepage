@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 13, 2009 at 07:54 PM
+-- Generation Time: Feb 14, 2009 at 11:28 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -53,6 +53,9 @@ CREATE TABLE `issuemanagment` (
 -- Dumping data for table `issuemanagment`
 --
 
+INSERT INTO `issuemanagment` (`issueId`, `memberId`, `position`) VALUES
+(1, 1, 'Manager1'),
+(1, 2, 'Manager2');
 
 -- --------------------------------------------------------
 
@@ -61,18 +64,18 @@ CREATE TABLE `issuemanagment` (
 --
 
 CREATE TABLE `issues` (
-  `id` int(4) NOT NULL auto_increment,
-  `number` int(4) NOT NULL,
+  `id` int(4) NOT NULL,
   `info` varchar(1600) default NULL,
   `releaseDate` datetime NOT NULL,
-  PRIMARY KEY  (`id`),
-  UNIQUE KEY `number` (`number`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `issues`
 --
 
+INSERT INTO `issues` (`id`, `info`, `releaseDate`) VALUES
+(1, 'first Issue of CATazine', '2009-01-06 20:34:40');
 
 -- --------------------------------------------------------
 
@@ -90,14 +93,16 @@ CREATE TABLE `members` (
   `information` varchar(1600) default NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `members`
 --
 
 INSERT INTO `members` (`id`, `name`, `address`, `email`, `email2`, `education`, `information`) VALUES
-(1, 'Mohamed Atia', 'Mansoura', 'snap4422@hotmail.com', '', 'km', 'sad');
+(1, 'Mohamed Atia', 'Mansoura', 'snap4422@hotmail.com', '', 'km', 'sad'),
+(2, '32432', 'Mansoura  ', 'snap4422swd@hotmail.com', NULL, NULL, NULL),
+(3, 'asdad', 'Mansoura  ', 'snap4422asd@hotmail.com', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -115,12 +120,17 @@ CREATE TABLE `topics` (
   PRIMARY KEY  (`id`),
   KEY `issueId` (`issueId`),
   KEY `memberId` (`memberId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `topics`
 --
 
+INSERT INTO `topics` (`id`, `issueId`, `memberId`, `name`, `category`, `contentLink`) VALUES
+(1, 1, 1, 'Topic1', 'sad', 'a'),
+(2, 1, 2, 'Topic2', 'sasd', ''),
+(3, 1, 2, 'tttt', '', ''),
+(4, 1, 2, '453657u', '', '');
 
 --
 -- Constraints for dumped tables
