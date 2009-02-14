@@ -52,6 +52,10 @@ function ContentController() {
 		echo "<span class='cont_title'>Thank you for sharing your opinion, hope you like the next CataZine issues more (isA)!</span>";
 		
 	}	
+	else if ($_REQUEST['page'] == "viewmembers") {
+		echo "<h2 class='cont_title'>Issue members</h3>";
+		require_once("viewmembers.php");
+	}
 	else {
 		// Default Page
 		require_once("feedback.php");

@@ -2,7 +2,7 @@
   function GetSqlRows($queryResult)
   {
     $rtrnResult = array();
-    while($thisRow = mysql_fetch_row($queryResult))
+    while($thisRow =mysql_fetch_assoc($queryResult))
     {
       $rtrnResult[] = $thisRow;
     }
