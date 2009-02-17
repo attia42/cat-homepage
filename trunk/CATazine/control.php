@@ -56,6 +56,10 @@ function ContentController() {
 		echo "<h2 class='cont_title'>Issue members</h3>";
 		require_once("viewmembers.php");
 	}
+	else if ($_REQUEST['page'] == "member") {
+		echo "<h2 class='cont_title'>View member detail</h3>";
+		require_once("member.php");
+	}
 	else {
 		// Default Page
 		require_once("feedback.php");
