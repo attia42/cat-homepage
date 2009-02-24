@@ -7,14 +7,10 @@ require_once("config\\db.inc");
 
 if(isset($_GET["id"]))
 {
-  if(SanityCheck($_GET["id"], "integer", 5))
-  {
+  
     $memberId = $_GET["id"];
-  }
-  else
-  {
-    header("Location: index.php");
-  }
+  
+  
 }
 else
 {
@@ -31,7 +27,9 @@ if (!$link)
 $db_selected = mysql_select_db(DBNAME, $link);
 if (!$db_selected)
 {
+  
   die ("Database not selected : " . mysql_error());
+  header("Location: index.php");
 }
 
 $selectMemberQuery = "SELECT * 
@@ -41,25 +39,26 @@ $member = mysql_query($selectMemberQuery);
 if(!$member)
 {
   echo 'Query failed '.mysql_error();
-  exit();
+  header("Location: index.php");
 }
-$member = GetSqlRows();
+$member = GetSqlRows($member);
 $member = $member[0];
 
 ?>
 <div style="direction: ltr">
 <?php 
-if( empty($member["avatar"]))
-{
-  $member["avatar"] == "..\\images\\contact.jpg";
-}
-        echo $member["name"] & '<br />
-        <img align="right" alt="" src="'& $member["email"] & '" style="height: 16px" /><br />
-        '& $member["email"] &'<br />
-        '& $member["email2"] &'<br />
-        '& $member["address"] &'<br />
-        '& $member["education"] &'<br />
-        '& $member["information"];
+
+        if( empty($member["avatar"]))
+        {
+          $member["avatar"] = "images/contact.jpg";
+        }
+        echo $member["name"] . '<br />
+        <img align="right" alt="" src="'. $member["avatar"] . '" style="height: 80px" /><br />
+        '. $member["email"] .'<br />
+        '. $member["email2"] .'<br />
+        '. $member["address"] .'<br />
+        '. $member["education"] .'<br />
+        '. $member["information"];
         
 ?>
 </div>
