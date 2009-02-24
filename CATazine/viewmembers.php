@@ -5,7 +5,7 @@ require_once("config\\db.inc");
 
 
 $issueNumber = 0;
-if(isset($_GET["issue"]) && CheckSanity($_GET["issue"], "integer", 5))
+if(isset($_GET["issue"]) && SanityCheck($_GET["issue"], "integer", 5))
 {
   $issueNumber = $_GET["issue"]; 
 }
@@ -82,7 +82,7 @@ Managers
           for($i = 0; $i < count($managers); $i++)
           {
             echo "<tr><td>
-                {$managers[$i]['name']}</td>";
+                <a href=\"index.php?page=member&id={$managers[$i]['id']}\">{$managers[$i]['name']}</a></td>";
             echo "<td>
                {$managers[$i]['position']}";
               
@@ -113,7 +113,7 @@ Authors<table style="width:70%;">
           for($i = 0; $i < count($authors); $i++)
           {
             echo "<tr><td>
-                {$authors[$i]['name']}</td>";
+                <a href=\"index.php?page=member&id={$authors[$i]['id']}\">{$authors[$i]['name']}</a></td>";
             echo "<td>
                {$authors[$i]['topicName']}";
             while($authors[$i+1]["name"] == $authors[$i]['name'])
@@ -134,7 +134,7 @@ Authors<table style="width:70%;">
 
 
 <div style="width:70%;">
-<form action="index.php?page=viewmembers" method="get">
+<form action="index.php" method="get">
 Select an issue : &nbsp &nbsp &nbsp<select id="Select1" name="issue">
     <?php
     foreach($issues as $id)
@@ -144,6 +144,7 @@ Select an issue : &nbsp &nbsp &nbsp<select id="Select1" name="issue">
     
     ?>
 </select> &nbsp &nbsp &nbsp<input id="Submit1" type="submit" value="View team" style="" />
+<input name="page" value="viewmembers" style="visibility: hidden;"/>
 </form>
     
 </div>
