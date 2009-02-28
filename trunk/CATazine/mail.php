@@ -13,9 +13,9 @@ if(!empty($_POST['subject']) && !empty($_POST['name']) && !empty($_POST['email']
 	else {
 		$_REQUEST['page'] = "mail_fail";
 	}
-	require_once("index.php");
 }
 else {
 	$_REQUEST['page'] = "mail_fail";
 }
+require_once("index.php");
 ?>
