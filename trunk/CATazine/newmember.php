@@ -1,7 +1,7 @@
 <?php
 
 require_once("includes\\validation.php");
-require("config\\db.inc");
+require("config\\db.inc.php");
 
 if(isset($_POST["name"]) && isset($_POST["email"]))
 {
