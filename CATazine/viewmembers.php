@@ -1,7 +1,7 @@
 <?php
 require_once("includes/validation.php");
 require_once("includes/helpers.php");
-require_once("config/db.inc");
+require_once("config/db.inc.php");
 
 
 $issueNumber = 0;

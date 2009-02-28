@@ -1,6 +1,6 @@
 <?php 
 require_once('includes/validation.php');
-require_once("config/db.inc");
+require_once("config/db.inc.php");
 
 
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && isset($_POST['help']))
