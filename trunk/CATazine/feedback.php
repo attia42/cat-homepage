@@ -1,6 +1,6 @@
 <?php 
-require_once('includes\\validation.php');
-require_once("config\\db.inc");
+require_once('includes/validation.php');
+require_once("config/db.inc");
 
 
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && isset($_POST['help']))
@@ -31,7 +31,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['feed']) && i
     $feed = CleanForSql($_POST['feed']);
     $help = CleanForSql($_POST['help']);
     $time = date('Y-m-d H:i:s', time());
-    $query = "INSERT INTO users (name, email, comment, contrib, date) VALUES('$name', '$email', '$feed', '$help', '$time')";
+    $query = "INSERT INTO feedbacks (name, email, comment, contrib, date) VALUES('$name', '$email', '$feed', '$help', '$time')";
 		if(!mysql_query($query))
 		{
 			 echo 'Query failed '.mysql_error();

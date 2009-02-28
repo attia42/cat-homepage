@@ -8,7 +8,15 @@ require_once("config\\db.inc");
 if(SanityCheck($_POST["issueNumber"], "integer", 5) )
 {
   $issueNumber = $_POST["issueNumber"];
-  $image = isset($_POST["img"]) ? $_POST["img"] : "";
+  $uploaddir = '.\\images\\';
+  $uploadfile = $uploaddir . basename($_FILES['img']['name']);
+
+
+  if (!move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) 
+  {
+    
+  }
+  
   
 }
 
