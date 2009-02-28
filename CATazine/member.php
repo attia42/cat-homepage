@@ -1,8 +1,8 @@
 <?php
 
-require_once("includes\\validation.php");
-require_once("includes\\helpers.php");
-require_once("config\\db.inc");
+require_once("includes/validation.php");
+require_once("includes/helpers.php");
+require_once("config/db.inc");
 
 
 if(isset($_GET["id"]))
@@ -14,7 +14,8 @@ if(isset($_GET["id"]))
 }
 else
 {
-  header("Location: index.php");
+  echo "No user found!";
+  exit();
 }
 
 $link = mysql_connect(DBHOST, DBUSER, DBPASSWORD);
@@ -34,12 +35,12 @@ if (!$db_selected)
 
 $selectMemberQuery = "SELECT * 
                       FROM members
-                      WHERE id = $memberId";
+                      WHERE id = '$memberId'";
 $member = mysql_query($selectMemberQuery);
 if(!$member)
 {
-  echo 'Query failed '.mysql_error();
-  header("Location: index.php");
+  echo 'No user found!';
+  exit();
 }
 $member = GetSqlRows($member);
 $member = $member[0];

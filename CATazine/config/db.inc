@@ -1,6 +1,6 @@
 <?php
 define("DBHOST", "localhost");
-define("DBNAME", "_catazine");
-define("DBUSER", "root");
-define("DBPASSWORD", "");
+define("DBNAME", "cat_catazine");
+define("DBUSER", "cat_catazin");
+define("DBPASSWORD", "c4t4zin3");
 ?>

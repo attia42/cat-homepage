@@ -1,15 +1,14 @@
 <?php
-require_once("includes\\validation.php");
-require_once("includes\\helpers.php");
-require_once("config\\db.inc");
+require_once("includes/validation.php");
+require_once("includes/helpers.php");
+require_once("config/db.inc");
 
 
 $issueNumber = 0;
-if(isset($_GET["issue"]) && SanityCheck($_GET["issue"], "integer", 5))
+if(isset($_GET["issue"]))
 {
   $issueNumber = $_GET["issue"]; 
 }
-
 $link = mysql_connect(DBHOST, DBUSER, DBPASSWORD);
 if (!$link)
 {
@@ -24,8 +23,12 @@ if (!$db_selected)
 }
 $issues   = mysql_query("SELECT id FROM issues");
 $issues   = GetSqlRows($issues);
-$issueNumber = max($issues);
-$issueNumber = $issueNumber["id"];
+if($issueNumber == 0)
+{
+  $issueNumber = max($issues);
+  $issueNumber = $issueNumber["id"];
+  
+}
 
 if($issueNumber > 0)
 {
@@ -49,12 +52,10 @@ $managers = GetSqlRows($managers);
 $authors  = mysql_query($authorsQuery);
 $authors  = GetSqlRows($authors); 
 
-
-
-
-if(!$authors || !$managers)
+if(!$authors && !$managers)
 {
-  die ('Query failed '.mysql_error());
+  die ('No such data!');
+  
   exit();
 }
 
@@ -88,7 +89,7 @@ Managers
               
             while($managers[$i+1]["name"] == $managers[$i]['name'])
             {
-               echo $i;
+               
               
                $i++;
                echo "<br />{$managers[$i]['position']}";

@@ -22,7 +22,7 @@
 				<a href="index.php?page=feedback">feedback</a> | 
 				<a href="index.php?page=participate">participate</a> | 
 				<a href="index.php?page=archive">archive</a> | 
-				<a href="index.php?page=team">team</a> | 
+				<a href="index.php?page=viewmembers">team</a> | 
 				<a href="index.php?page=about">about us</a> | 
 				<a href="index.php?page=contact">contact us</a>
 			</div>
