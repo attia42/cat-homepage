@@ -1,0 +1,65 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font: 10px;
+}
+
+body, html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	height: 600px;
+}
+
+.footer {
+	font-size: 11px;
+}
+
+/*-------HTML Elements' Styles-------*/
+
+a {
+	color: #669900;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #7d552a;
+	/* font-weight: bolder; */
+}
+
+/*-------Form Styles-------*/
+/*-------You must use the class to style the type of input you are using-------*/
+
+input {
+	border: 1px solid gray;
+	margin: 5px;
+}
+
+input:hover {
+	border: 1px solid #FF9933;
+}
+
+textarea {
+	border: 1px solid gray;
+	margin: 5px;
+}
+
+textarea:hover {
+	border: 1px solid #FF9933;
+}
