@@ -1,7 +1,7 @@
 <?php
 include ('includes/validation.php');
 
-if(!empty($_POST['subject']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['msg'])) {
+if(CheckEmail($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['msg'])) {
 	$to      = 'catazine@catreloaded.net';
 	$subject = $_POST['subject'];
 	$message = $_POST['name'] . "Sent this message through CATazine System:\r\n" . wordwrap($_POST['msg'], 70);
